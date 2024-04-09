@@ -28,3 +28,16 @@ function displayUserPosts(users) {
 }
 
 fetchUserPosts();
+
+function goBackToUsersButton() {
+  const usersPageBtn = `
+  <div class="d-flex justify-content-end">
+    <a href="/index.html" class="btn btn-primary mt-5"><i class="fa-solid fa-arrow-left"></i> Back to Users</a>
+  </div>
+  `;
+  const goBackToUsersButton = (document.getElementById(
+    "goBackToUsersButton"
+  ).innerHTML = usersPageBtn);
+}
+
+goBackToUsersButton();
